@@ -20,7 +20,8 @@ const deploy = async () => {
     .deploy({ data: bytecode })
     .send({ gas: "1000000", from: accounts[0] });
 
-  console.log("this is the interface: " + interface);
+  console.log("this is the interface: ");
+  console.log(interface);
   console.log("Contract deployed to", result.options.address);
   provider.engine.stop();
 };
